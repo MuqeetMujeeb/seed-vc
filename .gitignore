@@ -17,6 +17,7 @@ __pycache__/
 
 # misc
 checkpoints/
+venv/
 test_waves/
 reconstructed/
 .python-version
@@ -26,3 +27,8 @@ runs/
 /garbages/
 /flagged/
 /experimental/
+
+# Large Windows binaries needed on disk (pydub's mp3 export path in
+# service.py) but never committed - GitHub rejected an earlier push over\n# its 100MB file size limit. Matches how Deep-Live-Cam/ handles the same\n# files (present, needed, untracked).
+ffmpeg.exe
+ffprobe.exe
